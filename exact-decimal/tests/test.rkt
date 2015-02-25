@@ -2,6 +2,8 @@
 
 (require rackunit)
 
+(check-pred exact? 0.1)
+(check-pred inexact? #i0.1)
 (check-equal? 0.1 1/10)
 (check-equal? (+ .1 .1 .1 .1 .1 .1 .1 .1) .8)
 (check-equal? (for/sum ([i 8]) .1) .8)
