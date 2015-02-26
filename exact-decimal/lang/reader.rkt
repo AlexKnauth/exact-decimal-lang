@@ -26,6 +26,8 @@
      (lambda (orig-read-syntax)
        (define (read-syntax . args)
          (parameterize ([read-decimal-as-inexact #f])
-           (apply orig-read-syntax args)))
+           (syntax-property (apply orig-read-syntax args)
+                            'module-language
+                            '#(exact-decimal/lang/language-info get-language-info #f))))
        read-syntax)
      (lambda (proc) proc))))
