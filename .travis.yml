@@ -21,9 +21,6 @@ env:
     # Supply more than one RACKET_VERSION (as in the example below) to
     # create a Travis-CI build matrix to test against multiple Racket
     # versions.
-    - RACKET_VERSION=5.3.4
-    - RACKET_VERSION=5.3.5
-    - RACKET_VERSION=5.92
     - RACKET_VERSION=6.0
     - RACKET_VERSION=6.1
     - RACKET_VERSION=6.1.1
@@ -53,7 +50,7 @@ install:
 before_script:
 
 script:
- - /usr/racket/bin/raco pkg install --deps search-auto --link exact-decimal-lang
- - /usr/racket/bin/raco test -p exact-decimal-lang
+ - raco pkg install --deps search-auto --link exact-decimal-lang
+ - raco test -p exact-decimal-lang
 
 after_script:
