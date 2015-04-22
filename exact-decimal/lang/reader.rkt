@@ -26,7 +26,7 @@
      (lambda (orig-read-syntax)
        (define (read-syntax . args)
          (parameterize ([read-decimal-as-inexact #f])
-           (define stx (apply read-syntax args))
+           (define stx (apply orig-read-syntax args))
            (define old-prop (syntax-property stx 'module-language))
            (define new-prop `#(exact-decimal/lang/language-info get-language-info ,old-prop))
            (syntax-property stx 'module-language new-prop)))
