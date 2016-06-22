@@ -1,6 +1,6 @@
 exact-decimal-lang [![Build Status](https://travis-ci.org/AlexKnauth/exact-decimal-lang.png?branch=master)](https://travis-ci.org/AlexKnauth/exact-decimal-lang)
 ===
-a racket meta-language that reads decimals as exact rationals
+a racket lang-extension that reads decimals as exact rationals
 
 documentation: http://pkg-build.racket-lang.org/doc/exact-decimal-lang/index.html
 

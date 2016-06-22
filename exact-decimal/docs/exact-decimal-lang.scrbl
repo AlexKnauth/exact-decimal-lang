@@ -1,11 +1,11 @@
 #lang scribble/manual
 
-@title{exact-decimal meta-language}
+@title{exact-decimal-lang}
 
 source code: @url["https://github.com/AlexKnauth/exact-decimal-lang"]
 
 @defmodulelang[exact-decimal]{
-The @racketmodname[exact-decimal] language is a meta-language like @racketmodname[at-exp]
+The @racketmodname[exact-decimal] language is a lang-extension like @racketmodname[at-exp]
 that reads decimals as exact rationals. 
 
 For example, @racket[@#,hash-lang[] @#,racketmodname[exact-decimal] @#,racketmodname[racket/base]]
