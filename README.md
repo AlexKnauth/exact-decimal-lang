@@ -1,4 +1,4 @@
-exact-decimal-lang [![Build Status](https://travis-ci.org/AlexKnauth/exact-decimal-lang.png?branch=master)](https://travis-ci.org/AlexKnauth/exact-decimal-lang)
+exact-decimal-lang
 ===
 a racket lang-extension that reads decimals as exact rationals
 
